@@ -1,0 +1,14 @@
+name: public-api-product
+displayName: Public API Product
+approvalType: auto
+attributes: []
+description: OAuth2 + Spike Arrest protected API
+apiResources:
+  - "/"
+  - "/public-api"
+  - "/v1/*"
+proxies:
+  - public-api
+quota: null
+quotaInterval: null
+quotaTimeUnit: null

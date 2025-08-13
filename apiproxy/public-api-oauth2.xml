@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<APIProxy revision="5" name="public-api-oauth2">
+  <DisplayName/>
+  <Description/>
+  <CreatedAt>1755095303574</CreatedAt>
+  <LastModifiedAt>1755095303574</LastModifiedAt>
+  <BasePaths>/public-api</BasePaths>
+  <Policies>
+    <Policy>GenerateAccessToken</Policy>
+    <Policy>VerifyAccessToken</Policy>
+    <Policy>RateLimiter</Policy>
+  </Policies>
+  <ProxyEndpoints>
+    <ProxyEndpoint>default</ProxyEndpoint>
+  </ProxyEndpoints>
+  <TargetEndpoints>
+    <TargetEndpoint>default</TargetEndpoint>
+  </TargetEndpoints>
+</APIProxy>
