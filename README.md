@@ -20,26 +20,24 @@ This project demonstrates how to secure a public API using **OAuth2 Client Crede
 3. Deploy to your `dev` environment.
 
 ### 2. Create API Product
-# From Apigee UI → Publish → API Products
-# Or import `api-product.yaml`
+ From Apigee UI → Publish → API Products
+ Or import `api-product.yaml`
 
-3. Create Developer App
+### 3. Create Developer App
 Follow developer-app.md to create your app and get Client ID & Secret.
 
-4. Get Access Token
-bash
-Copy
-Edit
+### 4. Get Access Token
+
 curl -X POST https://ORG-ENV.apigee.net/public-api/token \
   -d 'grant_type=client_credentials' \
   -u CLIENT_ID:CLIENT_SECRET
-5. Call the API
-bash
-Copy
-Edit
+  
+### 5. Call the API
+
 curl -i https://ORG-ENV.apigee.net/public-api \
   -H "Authorization: Bearer ACCESS_TOKEN"
-📦 Files
+  
+### 📦 Files
 apiproxy/ – Proxy source (OAuth2, Spike Arrest, routing to backend)
 
 api-product.yaml – API Product config
